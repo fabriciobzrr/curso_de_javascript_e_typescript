@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #7fbbff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Poppins;
+}
+
+body {
+  background-color: var(--primary-color);
+  line-height: 2rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 3rem auto;
+  background: #ddd;
+  padding: 2rem;
+  box-shadow: 0 0 15px #00000059;
+}
+
+.container h1 {
+  margin: 1rem 0;
+}
+
+.container p {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  padding: 6px 14px;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: #ccc;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+}
+
+form button {
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  opacity: 0.6;
+}
