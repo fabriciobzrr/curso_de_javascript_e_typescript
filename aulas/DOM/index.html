@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <div>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        impedit voluptatum <span>nihil quae molestias doloremque d</span>olorum
+        consectetur vitae assumenda corrupti!
+      </p>
+    </div>
+    <script>
+      const h1 = document.querySelector("h1")
+      const div = document.querySelector("div")
+      const h2 = div.querySelector("h2")
+      const p = div.querySelector("p")
+      const span = p.querySelector("span")
+
+      console.log(h1, h2, p, span, div)
+    </script>
+  </body>
+</html>

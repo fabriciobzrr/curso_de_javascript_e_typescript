@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #7fbbff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Poppins;
+}
+
+body {
+  background-color: var(--primary-color);
+  line-height: 2rem;
+}
+
+.container {
+  max-width: 640px;
+  margin: 3rem auto;
+  background: #ddd;
+  padding: 1rem;
+  box-shadow: 0 0 15px #00000059;
+}
+
+.container h1 {
+  margin: 1.5rem 0 1rem;
+}
+
+#title {
+  margin: 1rem 0;
+}
+
+#indice p {
+  margin-bottom: 10px;
+}
+
+#indice h3 {
+  margin-bottom: 10px;
+}
+
+#indice {
+  display: flex;
+  line-height: 1;
+  gap: 15rem;
+}
+
+#indice div {
+  margin: 0rem 0;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: #ccc;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+}
+
+form button {
+  margin: 2rem 0 1rem;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  opacity: 0.6;
+}
+
+.result-true {
+  padding: 0.4rem 1rem;
+  background-color: #d1e0b4;
+}
+
+.result-false {
+  padding: 0.4rem 1rem;
+  background-color: #d87b7b;
+}
