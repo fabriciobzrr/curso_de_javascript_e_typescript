@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #7fbbff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Poppins;
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+
+.container {
+  width: 800px;
+  margin: 3rem auto;
+  background: #ddd;
+  padding: 2rem;
+  box-shadow: 0 0 15px #00000059;
+}
+
+.container p {
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-size: 8rem;
+}
+
+.container button {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #ccc;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #888;
+  color: #fff;
+}
