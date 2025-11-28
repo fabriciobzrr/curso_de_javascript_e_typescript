@@ -37,8 +37,8 @@
 // console.log(maior(3, 20))
 
 // Resumindo mais ainda com arrow function
-// const maior = (a, b) => (a > b ? `${a}` : `${b}`)
-// console.log(maior(33, 6))
+const maior = (a, b) => (a > b ? `${a}` : `${b}`)
+console.log(maior(33, 6))
 
 // retorna o maior com o método .max do objeto Math
 // function max(a, b) {
