@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #7fbbff;
+  --primary-color: #060b14;
 }
 * {
   padding: 0;
@@ -11,7 +11,6 @@
 
 body {
   background-color: var(--primary-color);
-  line-height: 2rem;
 }
 
 .container {
@@ -19,48 +18,63 @@ body {
   margin: 3rem auto;
   background: #ddd;
   padding: 2rem;
-  box-shadow: 0 0 15px #00000059;
+  box-shadow: 0 0 8px #ffffff28;
 }
 
 .container h1 {
+  font-size: 3rem;
   margin: 1rem 0;
 }
 
-.container p {
-  text-align: justify;
-  margin-bottom: 2rem;
+.container div {
+  display: flex;
+  gap: 1rem;
 }
 
-form input,
-form label,
-form button {
-  display: block;
+.container input {
+  margin: 1rem 0 2rem;
+  padding: 1rem;
   width: 100%;
+  border: none;
+  font-size: 1rem;
 }
 
-form input {
-  padding: 6px 14px;
-  font-size: 1.2rem;
+.btn-add {
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  width: 100%;
   border: none;
-  border-bottom: 2px solid transparent;
+}
+
+.btn-add {
   background-color: #ccc;
-}
-
-form input:focus {
-  border-color: var(--primary-color);
-}
-
-form button {
-  margin-top: 2rem;
-  padding: 0.5rem 0;
-  border: none;
-  background-color: blue;
-  color: white;
-  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-form button:hover {
-  opacity: 0.6;
+.container button:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.tasks-list {
+  list-style-position: inside;
+  list-style: none;
+}
+
+.tasks-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+}
+
+.btn-remove {
+  padding: 0 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: bolder;
 }
