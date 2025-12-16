@@ -1,10 +1,65 @@
-Início dos estudos do Curso de JavaScript e TypeScript do básico ao avançado, ministrado pelo professor Luiz Otávio Miranda. Este repositório contém exercícios, projetos e anotações voltados ao aprendizado completo de JavaScript moderno e TypeScript, abrangendo:
+# 📚 Curso de JavaScript e TypeScript  
+**Do básico ao avançado – Professor Luiz Otávio Miranda**
 
-- Conceitos fundamentais de JavaScript: variáveis, tipos de dados, funções, arrays, objetos e estruturas de controle.
-- Programação assíncrona: callbacks, Promises e async/await.
-- Manipulação do DOM e eventos para criar interfaces interativas.
-- Orientação a objetos em JS e uso de classes, herança e encapsulamento.
-- TypeScript: tipagem estática, interfaces, enums, generics e melhores práticas de tipagem.
-- Desenvolvimento de projetos práticos que aplicam conceitos avançados e padrões de código limpo.
+Este repositório reúne todo o material produzido durante meus estudos completos de **JavaScript moderno** e **TypeScript**, com foco na formação sólida para desenvolvimento front-end e aplicações robustas.
 
-Objetivo: consolidar o conhecimento de front-end moderno, preparando para desenvolvimento profissional e aplicações robustas com JS/TS.
+---
+
+## 🚀 Conteúdo Abordado
+
+### **Fundamentos do JavaScript**
+- Variáveis e escopos  
+- Tipos de dados  
+- Funções e boas práticas  
+- Arrays e objetos  
+- Estruturas de controle  
+
+### **Programação Assíncrona**
+- Callbacks  
+- Promises  
+- Async/Await  
+
+### **DOM e Eventos**
+- Manipulação do DOM  
+- Criação de interfaces dinâmicas  
+- Eventos e interatividade  
+
+### **Programação Orientada a Objetos**
+- Classes  
+- Herança  
+- Encapsulamento  
+- Aplicações práticas no JavaScript moderno  
+
+### **TypeScript**
+- Tipagem estática  
+- Interfaces  
+- Enums  
+- Generics  
+- Boas práticas de tipagem e organização de código  
+
+### **Projetos e Exercícios**
+- Aplicações práticas desenvolvidas ao longo do curso  
+- Projetos com foco em arquitetura limpa  
+- Exercícios para fixação e aprofundamento  
+
+---
+
+## 🎯 Objetivo do Repositório
+
+Consolidar o aprendizado completo de **JS/TS**, evoluindo do básico ao avançado, desenvolvendo aplicações consistentes, escaláveis e alinhadas ao mercado profissional moderno.
+
+---
+
+## 🛠️ Tecnologias e Ferramentas
+
+- **JavaScript (ES6+)**  
+- **TypeScript**  
+- **Node.js** para execução de scripts  
+- **Ferramentas de build e boas práticas**  
+
+---
+
+## 🧭 Progresso e Evolução
+
+Este repositório será continuamente atualizado com novos projetos, exercícios e anotações ao longo da jornada de estudos.
+
