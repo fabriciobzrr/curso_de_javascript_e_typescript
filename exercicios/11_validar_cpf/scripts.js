@@ -15,7 +15,9 @@ Se o número dígito for maior que 9, consideramos 0.
 Se o número dígito for maior que 9, consideramos 0.
 */
 function ValidaCpf(cpfEnviado) {
-  // this.cpfEnviado = cpfEnviado
+  // Chave que armazena o CPF
+  // this.cpfLimpo = cpfEnviado.replace(/\D+/g, "")
+
   Object.defineProperty(this, "cpfLimpo", {
     enumerable: true,
     get: function () {
@@ -27,11 +29,11 @@ function ValidaCpf(cpfEnviado) {
 ValidaCpf.prototype.validate = function () {
   // Valida se recebeu o CPF na função
   if (typeof this.cpfLimpo === "undefined" || typeof this.cpfLimpo === "null")
-    return false
+    return
   // Valida se o CPF recebido contém 11 dígitos
-  if (this.cpfLimpo.length !== 11) return false
+  if (this.cpfLimpo.length !== 11) return
   // Valida se o CPF o mesmo número em sequência
-  if (this.isSequencial()) return false
+  if (this.isSequencial()) return
 
   // Pega o Array retornado com os números do CPF e remove os 2 últimos dígitos, restando apenas 9
   const cpfParcial = this.cpfLimpo.slice(0, -2)
@@ -60,19 +62,40 @@ ValidaCpf.prototype.isSequencial = function () {
   return sequency === this.cpfLimpo
 }
 
+// Validando CPF no HTML via input
 const cpfInput = document.querySelector("#cpf")
 const btnEnviar = document.querySelector("#btn-enviar")
-const resultElement = document.querySelector("#result")
+const containerResult = document.querySelector(".container-result")
+const resultElement = document.querySelector(".container-result #result")
 
+// Permite somente dígitos numéricos no input
+cpfInput.addEventListener("input", function () {
+  const inputValue = cpfInput.value.replace(/\D+/g, "")
+  cpfInput.value = inputValue
+})
+
+// Informa se o CPF é válido ou inválido
 btnEnviar.addEventListener("click", function () {
+  // Instancia um novo objeto para o CPF
   const cpf = new ValidaCpf(cpfInput.value)
-  if (cpf.validate()) {
-    resultElement.classList.add("isValid")
-    resultElement.classList.remove("isInvalid")
-    resultElement.textContent = `CPF Válido`
-  } else {
-    resultElement.classList.add("isInvalid")
+  // Se o CPF não for digitado
+  if (!cpf.cpfLimpo) {
+    resultElement.textContent = `Digite um número CPF válido.`
     resultElement.classList.remove("isValid")
-    resultElement.textContent = `CPF Inválido`
+    resultElement.classList.remove("isInvalid")
+    // Caso contrário, valida CPF
+  } else {
+    // Se o CPF for válido, exibe a mensagem na tela em verde
+    if (cpf.validate()) {
+      resultElement.classList.add("isValid")
+      resultElement.classList.remove("isInvalid")
+      resultElement.textContent = `O CPF é Válido.`
+      // Se o CPF for inválido, exibe a mensagem na tela em vermelho
+    } else {
+      resultElement.classList.add("isInvalid")
+      resultElement.classList.remove("isValid")
+      resultElement.textContent = `O CPF é Inválido.`
+    }
   }
+  return
 })
