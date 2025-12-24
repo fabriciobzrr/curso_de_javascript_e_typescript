@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timer</title>
+    <title>Validador de CPF</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
     <main class="container">
-      <h1>Timer</h1>
-      <p class="timer">00:00:00</p>
-      <div>
-        <button class="start">Iniciar</button>
-        <button class="stop">Parar</button>
-        <button class="clear">Zerar</button>
-      </div>
+      <h1>Validador de CPF</h1>
+
+      <form id="form-cpf">
+        <label for="input-cpf">CPF</label>
+        <input type="text" id="input-cpf" />
+
+        <button type="submit">Enviar</button>
+      </form>
     </main>
+    <section class="result">
+      <p id="cpf" class=""></p>
+    </section>
   </body>
 </html>
